@@ -8,7 +8,7 @@ brew tap surajincloud/tools
 
 ## Install tools
 
-* kubectl-eks [TODO]
+* kubectl-eks
 
 ```
 brew install kubectl-eks
