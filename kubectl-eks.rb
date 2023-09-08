@@ -5,20 +5,20 @@
 class KubectlEks < Formula
   desc ""
   homepage "https://github.com/surajincloud/homebrew-tools"
-  version "0.4.2"
+  version "0.4.3"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.2/kubectl-eks_0.4.2_darwin_arm64.tar.gz"
-      sha256 "d7faff35caf63f8a7447ebd2517580cba5860bf273d1c620e240dc37af1df89f"
+    if Hardware::CPU.intel?
+      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.3/kubectl-eks_0.4.3_darwin_amd64.tar.gz"
+      sha256 "6c72cdbbd1e6b4e0b3d609ec6dfa884f24059c78be4529aa9d9de90a5db87836"
 
       def install
         bin.install "kubectl-eks"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.2/kubectl-eks_0.4.2_darwin_amd64.tar.gz"
-      sha256 "faa1607be40beb23a87341687742875bc34bfe813c91a01b914a58b4cff83664"
+    if Hardware::CPU.arm?
+      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.3/kubectl-eks_0.4.3_darwin_arm64.tar.gz"
+      sha256 "6a20e06ef9269f293545edcb46c76f36b0e640f8681777878d3526836b748009"
 
       def install
         bin.install "kubectl-eks"
@@ -28,16 +28,16 @@ class KubectlEks < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.2/kubectl-eks_0.4.2_linux_arm64.tar.gz"
-      sha256 "e7d6cfb5ca296ee8362a9a1118eb2d01238f42c9c5e40aec70bc5691b999a84b"
+      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.3/kubectl-eks_0.4.3_linux_arm64.tar.gz"
+      sha256 "749c3783a7caaa2cc61a0040299cec7c965bbbb4fc22bc094f30e87953ca0f92"
 
       def install
         bin.install "kubectl-eks"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.2/kubectl-eks_0.4.2_linux_amd64.tar.gz"
-      sha256 "783c5d740248de99cee1eb63b6791aa7f602b332247827dcb399735df44252af"
+      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.3/kubectl-eks_0.4.3_linux_amd64.tar.gz"
+      sha256 "18ab9e791186eacc14619556ff6d8ad85e9b5501aec9454af4a2940a1804253c"
 
       def install
         bin.install "kubectl-eks"
