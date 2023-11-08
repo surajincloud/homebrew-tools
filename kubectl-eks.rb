@@ -5,20 +5,20 @@
 class KubectlEks < Formula
   desc ""
   homepage "https://github.com/surajincloud/homebrew-tools"
-  version "0.4.3"
+  version "0.4.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.3/kubectl-eks_0.4.3_darwin_amd64.tar.gz"
-      sha256 "6c72cdbbd1e6b4e0b3d609ec6dfa884f24059c78be4529aa9d9de90a5db87836"
+      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.4/kubectl-eks_0.4.4_darwin_amd64.tar.gz"
+      sha256 "1d695e82fc5fd0a5dd883e5ee461cc1a8188c094640523adb9c88d505e82e362"
 
       def install
         bin.install "kubectl-eks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.3/kubectl-eks_0.4.3_darwin_arm64.tar.gz"
-      sha256 "6a20e06ef9269f293545edcb46c76f36b0e640f8681777878d3526836b748009"
+      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.4/kubectl-eks_0.4.4_darwin_arm64.tar.gz"
+      sha256 "2c9b222b8847782da915fce524c542dd22db648246168808203d178e83a5c450"
 
       def install
         bin.install "kubectl-eks"
@@ -28,16 +28,16 @@ class KubectlEks < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.3/kubectl-eks_0.4.3_linux_arm64.tar.gz"
-      sha256 "749c3783a7caaa2cc61a0040299cec7c965bbbb4fc22bc094f30e87953ca0f92"
+      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.4/kubectl-eks_0.4.4_linux_arm64.tar.gz"
+      sha256 "02edf2344605085d5ac4fb1db8636aa77c73866234a1e1337eecfdc806b2800a"
 
       def install
         bin.install "kubectl-eks"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.3/kubectl-eks_0.4.3_linux_amd64.tar.gz"
-      sha256 "18ab9e791186eacc14619556ff6d8ad85e9b5501aec9454af4a2940a1804253c"
+      url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.4/kubectl-eks_0.4.4_linux_amd64.tar.gz"
+      sha256 "eb5811e3ce013136cb3fea3eec010ce65e0f716d3327045c3561f155a95187c8"
 
       def install
         bin.install "kubectl-eks"
