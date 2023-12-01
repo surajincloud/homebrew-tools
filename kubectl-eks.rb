@@ -10,7 +10,7 @@ class KubectlEks < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.4/kubectl-eks_0.4.4_darwin_amd64.tar.gz"
-      sha256 "1d695e82fc5fd0a5dd883e5ee461cc1a8188c094640523adb9c88d505e82e362"
+      sha256 "e921b77af074a3b32c1819826c4109b14ba1f203928165bc7dfac652fb281cce"
 
       def install
         bin.install "kubectl-eks"
@@ -18,7 +18,7 @@ class KubectlEks < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.4/kubectl-eks_0.4.4_darwin_arm64.tar.gz"
-      sha256 "2c9b222b8847782da915fce524c542dd22db648246168808203d178e83a5c450"
+      sha256 "adb4f617b18c482d2def64a89b4eb6364454b46e4670a19a9ca06ee052d8a79e"
 
       def install
         bin.install "kubectl-eks"
@@ -29,7 +29,7 @@ class KubectlEks < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.4/kubectl-eks_0.4.4_linux_arm64.tar.gz"
-      sha256 "02edf2344605085d5ac4fb1db8636aa77c73866234a1e1337eecfdc806b2800a"
+      sha256 "1a5311a01463d1130e0a68bfdb21f15700051e5c1a1fa1ed97d7baf135e10e2e"
 
       def install
         bin.install "kubectl-eks"
@@ -37,7 +37,7 @@ class KubectlEks < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/surajincloud/kubectl-eks/releases/download/v0.4.4/kubectl-eks_0.4.4_linux_amd64.tar.gz"
-      sha256 "eb5811e3ce013136cb3fea3eec010ce65e0f716d3327045c3561f155a95187c8"
+      sha256 "0d9ee51fb65cd95e5ae87c98dc2d7373d4132c55fde49b15c118e3737d0895b8"
 
       def install
         bin.install "kubectl-eks"
